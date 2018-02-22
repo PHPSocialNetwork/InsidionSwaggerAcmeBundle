@@ -1,0 +1,36 @@
+{
+  "name": "phpsocialnetwork/insidion-swagger-acme-bundle",
+  "description": "Swagger Acme Bundle",
+  "keywords": [
+    "bundle",
+    "swagger",
+    "acme"
+  ],
+  "type": "symfony-bundle",
+  "homepage": "https://github.com/PHPSocialNetwork/InsidionSwaggerAcmeBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Georges.L",
+      "email": "contact@geolim4.com",
+      "homepage": "https://github.com/Geolim4",
+      "role": "Owner / Current maintainer"
+    }
+  ],
+  "require": {
+    "php": ">= 5.6",
+    "symfony/filesystem": "^3.3",
+    "symfony/framework-bundle": "^3.3",
+    "symfony/routing": "^3.3",
+    "doctrine/annotations": "^1.4",
+    "insidion/swagger-bundle": "^2.0",
+    "sensio/framework-extra-bundle": "^5.1"
+
+  },
+  "minimum-stability": "alpha",
+  "autoload": {
+    "psr-4": {
+      "PhpSocialNetwork\\InsidionSwaggerAcmeBundle\\": "src/"
+    }
+  }
+}

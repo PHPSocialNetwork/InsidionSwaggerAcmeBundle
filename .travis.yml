@@ -1,0 +1,32 @@
+language: php
+
+sudo: false
+
+php:
+  - 5.6
+  - 7.0
+  - 7.1
+  - 7.2
+  - nightly
+  - hhvm
+
+matrix:
+  allow_failures:
+    - php: nightly
+    - php: hhvm
+
+env:
+  - SYMFONY_VERSION=3.3.*
+  - SYMFONY_VERSION=3.4.x-dev
+
+before_install:
+  - composer self-update
+  - composer remove symfony/framework-bundle --no-update
+  - composer remove symfony/filesystem --no-update
+  - composer require --no-update symfony/symfony "$SYMFONY_VERSION"
+
+install:
+    - composer install --no-interaction --prefer-dist
+
+script:
+  - ./vendor/bin/phpunit -c phpunit.xml.dist --coverage-clover=coverage.xml

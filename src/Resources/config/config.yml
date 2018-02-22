@@ -1,0 +1,9 @@
+insidion_swagger:
+  swagger:
+    tags:
+      -
+        name: acme
+        description: A desc
+        externalDocs:
+          description:	"Find out more"
+          url: "http://swagger.io"

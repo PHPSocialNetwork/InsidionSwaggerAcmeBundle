@@ -1,0 +1,4 @@
+insidion_acme:
+    resource: '@InsidionSwaggerAcmeBundle/Controller/'
+    type: annotation
+    prefix: /acme
