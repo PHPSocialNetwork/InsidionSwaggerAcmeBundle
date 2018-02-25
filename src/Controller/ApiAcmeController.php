@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\Request;
 class ApiAcmeController extends Controller
 {
     /**
-     * @Route("/", name="insidion_acme_index_head")
+     * @Route("/", name="insidion_swagger_acme.index_head")
      * @Swagger(showInDocs=true, operationId="insidion_acme_index_head", tags={"acme"})
      * @SwaggerResult(status="200", description="Shows the order", schema="integer")
      * @Method("HEAD")
@@ -27,7 +27,7 @@ class ApiAcmeController extends Controller
     }
 
     /**
-     * @Route("/", name="insidion_acme_index_get")
+     * @Route("/", name="insidion_swagger_acme.index_get")
      * @Swagger(showInDocs=true, operationId="insidion_acme_index_get", tags={"acme"})
      * @SwaggerResult(status="200", description="Shows the order", schema="integer")
      * @Method("GET")
@@ -38,7 +38,7 @@ class ApiAcmeController extends Controller
     }
 
     /**
-     * @Route("/", name="insidion_acme_index_post")
+     * @Route("/", name="insidion_swagger_acme.index_post")
      * @Swagger(showInDocs=true, operationId="insidion_acme_index_post", tags={"acme"})
      * @SwaggerResult(status="200", description="Shows the order", schema="integer")
      * @Method("POST")
@@ -49,7 +49,7 @@ class ApiAcmeController extends Controller
     }
 
     /**
-     * @Route("/", name="insidion_acme_index_delete")
+     * @Route("/", name="insidion_swagger_acme.index_delete")
      * @Swagger(showInDocs=true, operationId="insidion_acme_index_delete", tags={"acme"})
      * @SwaggerResult(status="200", description="Shows the order", schema="integer")
      * @Method("DELETE")
@@ -60,7 +60,7 @@ class ApiAcmeController extends Controller
     }
 
     /**
-     * @Route("/", name="insidion_acme_index_put")
+     * @Route("/", name="insidion_swagger_acme.index_put")
      * @Swagger(showInDocs=true, operationId="insidion_acme_index_put", tags={"acme"})
      * @SwaggerResult(status="200", description="Shows the order", schema="integer")
      * @Method("PUT")
@@ -71,7 +71,7 @@ class ApiAcmeController extends Controller
     }
 
     /**
-     * @Route("/", name="insidion_acme_index_patch")
+     * @Route("/", name="insidion_swagger_acme.index_patch")
      * @Swagger(showInDocs=true, operationId="insidion_acme_index_patch", tags={"acme"})
      * @SwaggerResult(status="200", description="Shows the order", schema="integer")
      * @Method("PATCH")
@@ -82,7 +82,7 @@ class ApiAcmeController extends Controller
     }
 
     /**
-     * @Route("/", name="insidion_acme_index_options")
+     * @Route("/", name="insidion_swagger_acme.index_options")
      * @Swagger(showInDocs=true, operationId="insidion_acme_index_options", tags={"acme"})
      * @SwaggerResult(status="200", description="Shows the order", schema="integer")
      * @Method("OPTIONS")

@@ -24,6 +24,6 @@ class InsidionSwaggerAcmeExtension extends Extension
         /**
          * @todo merge to swaggerbundle config
          */
-       // $loader->load('config.yml');
+       $loader->load('config.yml');
     }
 }
